@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  /* color: #333; */
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  margin-top: 30px;
+   overflow-y: auto;
+   background-color: #f4f7fa;
+  color:  rgb(7, 13, 97);
+ 
+}
+.about-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  height: 10vh;           /* fill the whole viewport */
+  text-align: center;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: rgb(7, 13, 97); /* Optional: match your style */
+}
+
+ 
+
+.container1 {
+  width: 90%;
+  padding: 40px;
+  overflow-y: auto;
+  color:  rgb(7, 13, 97)
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar li {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.navbar .active {
+  background-color: #222;
+  color: white;
+  border-radius: 4px;
+}
+
+
+.about h2 {
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.details {
+  display: flex;
+  margin-top: 30px;
+  gap: 40px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h3 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: square inside;
+  padding-left: 0;
+}
+
+.column p {
+  margin: 5px 0;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f5f7fa;
+  padding: 2rem;
+  border-radius: 10px;
+
+  max-width: 900px;
+  margin: 2rem auto;
+  gap: 2rem;
+}
+
+/* Tablet and below */
+/* @media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  
+}
+
+/* Mobile */
+/* @media (max-width: 500px) {
+  .about{
+    padding: 1rem;
+    border-radius: 6px;
+  }
+ 
+}  */

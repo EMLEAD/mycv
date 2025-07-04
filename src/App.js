@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import Sidebar from './component/Sidebar'
+import Header from "./component/header/Header"
+import Home from './component/home/Home'
+import About from './component/about/About'
+import Services from "./component/services/Services"
+// import Contact from './component/contact/Contact'
+import Footer from './component/footer/Footer'
+import ContactLayout from "./component/layout/ContactLayout"
+import { BrowserRouter, Routes,Route } from 'react-router-dom'
+// import info from './component/layout/info'
+// import {FaLinkedin, FaFacebook,FaGithub,FaInstagramSquare,FaTwitter } from "react-icons/fa";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    < BrowserRouter>
+      <Header/>
+    
+      <Routes>
+ <Route element={<Home/>} path='/'/>
+ <Route element={<About/>} path='/about'/>
+ <Route element={<Services/>} path='/Services'/>
+ <Route element={<ContactLayout/>} path='/Contact'>
+
+ </Route>
+</Routes>
+<Footer/>
+
+
+
+</BrowserRouter>
+    
+  )
 }
 
-export default App;
+export default App

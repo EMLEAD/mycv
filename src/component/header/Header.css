@@ -1,0 +1,68 @@
+body {
+  background: rgba(246, 243, 243, 0.991);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4rem;
+  color: rgb(7, 13, 97);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(7, 13, 97);
+}
+
+a.active {
+  color: rgb(245, 128, 89);
+}
+
+/* ✅ Responsive Media Query */
+@media (max-width: 768px) {
+  nav ul li {
+    padding-left: 2rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: row;
+    padding: 1rem 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  nav ul li {
+    padding-left: 0;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,95 @@
+.img {
+  height: 100%;
+  width: 30%;
+  object-fit: cover;
+}
+
+/* Responsive container for image and text */
+.sub-div {
+  margin-top: 4rem;
+  margin-left: 3rem;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name h1 {
+  font-size: 22px;
+  color: rgb(7, 13, 97);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info {
+  height: 10rem;
+  margin-top: 8rem;
+  padding-left: 3rem;
+}
+
+.typed {
+  color: rgb(245, 128, 89);
+  font-size: 25px;
+  padding-left: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn {
+  background-color: rgb(7, 13, 97);
+  color: rgba(246, 243, 243, 0.991);
+  border-radius: 8px;
+  height: 2.5rem;
+  width: 8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2rem;
+  font-size: 18px;
+}
+
+/* ✅ Responsive Media Queries */
+@media (max-width: 768px) {
+  .sub-div {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+
+  .img {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .info {
+    padding-left: 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .typed {
+    font-size: 22px;
+    padding-left: 0;
+  }
+
+  .name h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .typed {
+    font-size: 18px;
+  }
+
+  .name h1 {
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .img {
+    width: 100%;
+  }
+}
