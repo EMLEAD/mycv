@@ -49,7 +49,7 @@
   .sub-div {
     flex-direction: column;
     align-items: center;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     margin-top: 2rem;
   }
 
@@ -85,7 +85,7 @@
   }
 
   .btn {
-    width: 100%;
+    width: 90%;
     font-size: 16px;
   }
 
