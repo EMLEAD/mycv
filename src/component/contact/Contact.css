@@ -43,12 +43,14 @@ body {
   flex-direction: column;
   gap: 16px;
   margin-bottom: 30px;
+  
 }
 
 .contact-info h2 {
   font-size: 16px;
   font-weight: 600;
   color: rgb(7, 13, 97);
+ 
 }
 
 .contact-info a {

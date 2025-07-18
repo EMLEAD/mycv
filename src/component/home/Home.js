@@ -9,12 +9,12 @@ const Home = () => {
     useEffect(() => {
       // Initialize Typed.js
       const typed = new Typed(".typed", {
-        strings: ["Full-Stack Developer", ],
+        strings: ["Full-Stack Developer", "Tech Enthusiast"],
         typeSpeed: 50,
         backSpeed: 30,
         loop: true,
-        showCursor: true,
-        cursorChar: "",
+        showCursor: false,
+        // cursorChar: "",
         smartBackspace: true,
       });
   

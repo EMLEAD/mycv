@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import { FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -25,12 +26,13 @@ const Contact = () => {
 
         <div className="contact-info">
           <div>
-            <h2>Email</h2>
-            <a href="mailto:adewalem88@gmail.com">adewalem88@gmail.com</a>
+            <h2>Email:</h2>
+            <a href="mailto:adewalem88@gmail.com"> <FaEnvelope size={20} color="rgb(7, 13, 97)" /> adewalem88@gmail.com</a>
           </div>
           <div>
-            <h2>Phone</h2>
-            <a href="tel:+2347037627565">+2347037627565</a>
+            <h2>Phone:</h2>
+            <a href="tel:+2347037627565"> <FaWhatsapp size={20} color="rgb(7, 13, 97)" />+2347037627565
+            </a>
           </div>
         </div>
 
