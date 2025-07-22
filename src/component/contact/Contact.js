@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import { FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import emailjs from 'emailjs-com'; // <-- Add this import
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -12,8 +13,25 @@ const Contact = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // handle backend/email logic here
-    setSubmitted(true);
+
+    // Replace these with your actual EmailJS IDs
+    const SERVICE_ID = 'service_b2d0i1g';
+    const TEMPLATE_ID = 'template_90x9f9g';
+    const USER_ID = 'P4p2VDKjqKxuTW0CB';
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+      from_name: form.name,
+      from_email: form.email,
+      message: form.message,
+    }, USER_ID)
+      .then(() => {
+        setSubmitted(true);
+        setForm({ name: '', email: '', message: '' });
+      })
+      .catch((error) => {
+        alert('Failed to send message. Please try again later.');
+        console.error('EmailJS error:', error);
+      });
   };
 
   return (
@@ -81,8 +99,6 @@ const Contact = () => {
             <button type="submit" className="submit-btn">Send Message</button>
           </form>
         )}
-
-        
       </div>
     </div>
   );

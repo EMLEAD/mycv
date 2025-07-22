@@ -31,6 +31,9 @@
   padding-left: 5px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.typed::after {
+    color: rgb(245, 128, 89);
+}
 
 .btn {
   background-color: rgb(7, 13, 97);
