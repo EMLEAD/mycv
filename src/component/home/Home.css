@@ -1,28 +1,43 @@
 .img {
   height: 100%;
-  width: 40%;
+  width: 30%;
   margin-bottom: 2rem;}
 
 /* Responsive container for image and text */
 .sub-div {
+  width: 100%;
   margin-top: 4rem;
-  /* margin-left: 3rem; */
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center; /* Center text for all children */
 }
 
-.name h1 {
-  font-size: 22px;
-  color: rgb(7, 13, 97);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
 }
 
 .info {
-  height: 10rem;
-  margin-top: 8rem;
-  padding-left: 3rem;
+  width: 100%;
+  height: auto;
+  padding-left: 0;
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name h1 {
+  font-size: 60px;
+  color: rgb(7, 13, 97);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 .typed {
@@ -49,49 +64,24 @@
 /* ✅ Responsive Media Queries */
 @media (max-width: 768px) {
   .sub-div {
-    flex-direction: column;
-    align-items: center;
-    /* margin-left: 1rem; */
     margin-top: 2rem;
   }
-
-  .img {
-    width: 80%;
-    margin-bottom: 2rem;
-    
-  }
-
   .info {
-    padding-left: 0;
     margin-top: 2rem;
-    text-align: center;
   }
-
-  .typed {
-    font-size: 22px;
-    padding-left: 0;
-  }
-
   .name h1 {
     font-size: 20px;
-    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  .typed {
-    font-size: 18px;
-  }
-
   .name h1 {
     font-size: 18px;
   }
-
   .btn {
     width: 100%;
     font-size: 16px;
   }
-
   .img {
     width: 100%;
   }

@@ -1,10 +1,16 @@
 body {
   background: rgba(246, 243, 243, 0.991);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;           /* Changed from 100vw */
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 header {
-  width: 100%;
+  width: 100%;           /* Changed from 100vw */
+  box-sizing: border-box;
   height: auto;
   display: flex;
   align-items: center;
@@ -97,11 +103,20 @@ nav ul li a:hover {
 
 /* Tablet */
 @media (max-width: 900px) {
+  body {
+  background: rgba(246, 243, 243, 0.991);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;           /* Changed from 100vw */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
   header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
   .logo-div {
     margin-bottom: 0;
@@ -156,7 +171,7 @@ nav ul li a:hover {
 }
 
 /* Small Tablet */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   nav ul li {
     font-size: 14px;
   }
@@ -164,7 +179,7 @@ nav ul li a:hover {
     width: 40px;
     height: 40px;
   }
-}
+} */
 
 /* Mobile */
 @media (max-width: 600px) {
@@ -201,7 +216,7 @@ nav ul li a:hover {
 /* Extra Small Devices */
 @media (max-width: 480px) {
   header {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
   }
   .logo {
     width: 32px;

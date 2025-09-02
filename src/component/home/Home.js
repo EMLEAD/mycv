@@ -9,7 +9,7 @@ const Home = () => {
     useEffect(() => {
       // Initialize Typed.js
       const typed = new Typed(".typed", {
-        strings: ["Full-Stack Developer","Technical Writer"],
+        strings: ["Full-Stack Developer","Freelancer"],
         typeSpeed: 50,
         backSpeed: 30,
         loop: true,
