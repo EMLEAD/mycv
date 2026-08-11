@@ -1,10 +1,8 @@
 import React from 'react'
 import './Services.css'
-import ServiceIMG from "../assets/photo_2024-09-05_22-58-09.jpg"
 import {
   FaCube,
   FaQuinscape,
-  FaPlayCircle,
   FaLandmark,
   FaCode,
   FaChalkboardTeacher,
