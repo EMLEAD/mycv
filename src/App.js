@@ -1,6 +1,5 @@
 import React from 'react'
 import './App.css'
-import Sidebar from './component/Sidebar'
 import Header from "./component/header/Header"
 import Home from './component/home/Home'
 import About from './component/about/About'
