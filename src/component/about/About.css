@@ -43,6 +43,7 @@ body {
   position: relative;
   display: inline-block;
   animation: slideInDown 0.8s ease-out;
+  
 }
 
 .about h2::after {
@@ -489,6 +490,7 @@ body {
 }
 .about {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   background: #f5f7fa;
   padding: 2rem;

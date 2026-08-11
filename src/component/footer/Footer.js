@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
+import {FaGithub, FaLinkedin, FaFacebook,FaTwitter,FaInstagram } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -26,8 +26,15 @@ const Footer = () => {
 
         {/* Social Media */}
         <div className="footer-section">
-          <h3 className="footer-subtitle">Follow Us</h3>
+          <h3 className="footer-subtitle">SOCIALS</h3>
           <div className="footer-icons">
+
+             <a href="https://www.linkedin.com/in/adewale-moses-492a36263/" target="_blank" rel="noopener noreferrer" className="footer-icon">
+              <FaLinkedin size={24} />
+            </a>
+            <a href="https://github.com/EMLEAD" target="_blank" rel="noopener noreferrer" className="footer-icon">
+              <FaGithub size={24} />
+            </a>
             <a href="https://www.facebook.com/moses.adewale.5243/" target="_blank" rel="noopener noreferrer" className="footer-icon">
               <FaFacebook size={24} />
             </a>
@@ -37,9 +44,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/adewale_emc/" target="_blank" rel="noopener noreferrer" className="footer-icon">
               <FaInstagram size={24} />
             </a>
-            <a href="https://github.com/EMLEAD" target="_blank" rel="noopener noreferrer" className="footer-icon">
-              <FaGithub size={24} />
-            </a>
+            
           </div>
         </div>
       </div>
